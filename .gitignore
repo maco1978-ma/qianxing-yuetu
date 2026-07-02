@@ -1,0 +1,7 @@
+node_modules/
+signups.db
+signups.db-shm
+signups.db-wal
+.DS_Store
+*.log
+.env

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粤港澳名校科技探索营</title>
+    <style id="theme-vars">
+{"color":{"brand":{"brand-900":{"hex":"#00275a","opacity":"1"},"brand-800":{"hex":"#003b82","opacity":"1"},"brand-700":{"hex":"#004fad","opacity":"1"},"brand-600":{"hex":"#0064d6","opacity":"1"},"brand-500":{"hex":"#007aff","opacity":"1","isPrimary":true},"brand-400":{"hex":"#2e8dff","opacity":"1"},"brand-300":{"hex":"#66abff","opacity":"1"},"brand-200":{"hex":"#9fcbff","opacity":"1"},"brand-100":{"hex":"#cfe5ff","opacity":"1"},"brand-50":{"hex":"#e8f2ff","opacity":"1"}},"background":{"background-900":{"hex":"#000000","opacity":"1"},"background-800":{"hex":"#1c1c1e","opacity":"1"},"background-700":{"hex":"#3a3a3c","opacity":"1"},"background-600":{"hex":"#8e8e93","opacity":"1"},"background-500":{"hex":"#aeaeb2","opacity":"1"},"background-400":{"hex":"#d1d1d6","opacity":"1"},"background-300":{"hex":"#e5e5ea","opacity":"1"},"background-200":{"hex":"#f2f2f7","opacity":"1","isPrimary":true},"background-100":{"hex":"#f7f7fa","opacity":"1"},"background-50":{"hex":"#ffffff","opacity":"1"}},"text":{"text-900":{"hex":"#000000","opacity":"1"},"text-800":{"hex":"#1d1d1f","opacity":"1"},"text-700":{"hex":"#3c3c43","opacity":"1"},"text-600":{"hex":"#48484a","opacity":"1"},"text-500":{"hex":"#6e6e73","opacity":"1","isPrimary":true},"text-400":{"hex":"#8e8e93","opacity":"1"},"text-300":{"hex":"#aeaeb2","opacity":"1"},"text-200":{"hex":"#c7c7cc","opacity":"1"},"text-100":{"hex":"#e3e3e8","opacity":"1"},"text-50":{"hex":"#f5f5f7","opacity":"1"}},"icon":{"icon-900":{"hex":"#1d1d1f","opacity":"1"},"icon-800":{"hex":"#2c2c2e","opacity":"1"},"icon-700":{"hex":"#48484a","opacity":"1"},"icon-600":{"hex":"#6e6e73","opacity":"1","isPrimary":true},"icon-500":{"hex":"#8e8e93","opacity":"1"},"icon-400":{"hex":"#aeaeb2","opacity":"1"},"icon-300":{"hex":"#c7c7cc","opacity":"1"},"icon-200":{"hex":"#d1d1d6","opacity":"1"},"icon-100":{"hex":"#e5e5ea","opacity":"1"},"icon-50":{"hex":"#f5f5f7","opacity":"1"}},"state-success":{"state-success":{"hex":"#34c759","opacity":"1","isPrimary":true},"state-success-dark":{"hex":"#30d158","opacity":"1"},"state-success-surface":{"hex":"#e9f9ee","opacity":"1"},"state-success-foreground":{"hex":"#ffffff","opacity":"1"}},"state-error":{"state-error":{"hex":"#ff3b30","opacity":"1","isPrimary":true},"state-error-dark":{"hex":"#ff453a","opacity":"1"},"state-error-surface":{"hex":"#ffecea","opacity":"1"},"state-error-foreground":{"hex":"#ffffff","opacity":"1"}},"dark":{"background":{"hex":"#000000","opacity":"1"},"card":{"hex":"#1c1c1e","opacity":"1"},"popover":{"hex":"#3a3a3c","opacity":"1"},"border":{"hex":"#3a3a3c","opacity":"1"},"primary":{"hex":"#2e8dff","opacity":"1","isPrimary":true},"muted-foreground":{"hex":"#8e8e93","opacity":"1"},"foreground":{"hex":"#f5f5f7","opacity":"1"},"popover-foreground":{"hex":"#f5f5f7","opacity":"1"},"icon":{"hex":"#f5f5f7","opacity":"1"},"success-foreground":{"hex":"#ffffff","opacity":"1"}},"sidebar":{"sidebar-foreground":{"hex":"#1d1d1f","opacity":"1"},"sidebar-accent-foreground":{"hex":"#1d1d1f","opacity":"1"},"sidebar-primary":{"hex":"#007aff","opacity":"1","isPrimary":true},"sidebar-ring":{"hex":"#007aff","opacity":"1"},"sidebar-accent":{"hex":"#e5e5ea","opacity":"1"},"sidebar-border":{"hex":"#e5e5ea","opacity":"1"},"sidebar":{"hex":"#f2f2f7","opacity":"1"},"sidebar-primary-foreground":{"hex":"#ffffff","opacity":"1"}},"chart":{"chart-4":{"hex":"#5e5ce6","opacity":"1"},"chart-5":{"hex":"#bf5af2","opacity":"1"},"chart-2":{"hex":"#2e8dff","opacity":"1"},"chart-3":{"hex":"#ff9f0a","opacity":"1","isPrimary":true},"chart-1":{"hex":"#30d158","opacity":"1"}}},"font":{"family":{"font-sans":"DM Sans, ui-sans-serif, sans-serif, system-ui","font-serif":"DM Sans, ui-sans-serif, sans-serif, system-ui","font-mono":"JetBrains Mono, monospace"},"size":{},"weight":{},"lineHeight":{}},"shadow":{"shadow-2xs·Hairline":{"xOffset":"0px","yOffset":"1px","blur":"2px","spread":"-1px","color":{"hex":"#000000","opacity":"0.04"}},"shadow-xs·Subtle":{"xOffset":"0px","yOffset":"1px","blur":"2px","spread":"0px","color":{"hex":"#000000","opacity":"0.04"}},"shadow-sm·Card":{"layers":[{"xOffset":"0px","yOffset":"1px","blur":"2px","spread":"0px","color":{"hex":"#000000","opacity":"0.05"}},{"xOffset":"0px","yOffset":"1px","blur":"3px","spread":"-1px","color":{"hex":"#000000","opacity":"0.05"}}]},"shadow·Raised":{"layers":[{"xOffset":"0px","yOffset":"2px","blur":"4px","spread":"-1px","color":{"hex":"#000000","opacity":"0.06"}},{"xOffset":"0px","yOffset":"1px","blur":"2px","spread":"-1px","color":{"hex":"#000000","opacity":"0.05"}}]},"shadow-md·Card Hover":{"layers":[{"xOffset":"0px","yOffset":"4px","blur":"8px","spread":"-2px","color":{"hex":"#000000","opacity":"0.06"}},{"xOffset":"0px","yOffset":"2px","blur":"4px","spread":"-2px","color":{"hex":"#000000","opacity":"0.05"}}]},"shadow-lg·Float":{"layers":[{"xOffset":"0px","yOffset":"8px","blur":"24px","spread":"-8px","color":{"hex":"#000000","opacity":"0.08"}},{"xOffset":"0px","yOffset":"4px","blur":"8px","spread":"-4px","color":{"hex":"#000000","opacity":"0.05"}}]},"shadow-xl·Overlay":{"layers":[{"xOffset":"0px","yOffset":"16px","blur":"40px","spread":"-10px","color":{"hex":"#000000","opacity":"0.10"}},{"xOffset":"0px","yOffset":"8px","blur":"16px","spread":"-8px","color":{"hex":"#000000","opacity":"0.06"}}]},"shadow-2xl·Modal":{"xOffset":"0px","yOffset":"24px","blur":"64px","spread":"-12px","color":{"hex":"#000000","opacity":"0.12"}}},"radius":{"radius":"19.2px"},"spacing":{"spacing":"3.84px"},"size":{}}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="min-h-screen antialiased">
+    <style type="text/tailwindcss">
+  
+  @layer base {
+    body { background: var(--background-50); color: var(--text-800); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+    </style>
+<main class="pb-28">
+
+    <!-- ===== HEADER ===== -->
+    <header class="glass-header fixed top-0 left-0 right-0 z-50 pt-safe">
+        <div class="flex items-center justify-between px-4 h-14">
+            <button data-dom-id="back-home" class="flex items-center gap-1 text-[var(--color-brand-500)] active:opacity-60 transition-opacity">
+                <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                <span class="text-[15px] font-medium">返回</span>
+            </button>
+            <h1 class="text-[17px] font-semibold text-[var(--color-text-800)] truncate max-w-[60%]">粤港澳名校科技探索营</h1>
+            <div class="w-14"></div>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="relative w-full aspect-[16/10] mt-14 overflow-hidden">
+        <img src="../assets/hero-yuegangao.jpg" alt="粤港澳名校科技探索营"
+             class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-5 pb-6">
+            <h2 class="text-white text-[24px] font-bold leading-tight tracking-tight">粤港澳6天名校科技探索营</h2>
+            <p class="text-white/80 text-[14px] mt-2 font-normal">📍 贵阳出发 · 🎓 8-16岁</p>
+        </div>
+    </section>
+
+    <!-- ===== INFO BAR ===== -->
+    <section class="px-4 -mt-3 relative z-10">
+        <div class="apple-card-elevated p-4 grid grid-cols-2 gap-3">
+            <div class="flex flex-col items-center text-center">
+                <span class="text-[13px] text-[var(--color-text-400)]">📅 行程时长</span>
+                <span class="text-[15px] font-semibold text-[var(--color-text-800)] mt-0.5">6天5晚</span>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <span class="text-[13px] text-[var(--color-text-400)]">✈️ 往返方式</span>
+                <span class="text-[15px] font-semibold text-[var(--color-text-800)] mt-0.5">高铁往返</span>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <span class="text-[13px] text-[var(--color-text-400)]">🎓 适合年龄</span>
+                <span class="text-[15px] font-semibold text-[var(--color-text-800)] mt-0.5">8-16岁</span>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <span class="text-[13px] text-[var(--color-text-400)]">💰 研学费用</span>
+                <span class="text-[15px] font-semibold mt-0.5" style="color: var(--color-error);">¥5,880</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== IMPORTANT NOTICE ===== -->
+    <section class="px-4 mt-4">
+        <div class="rounded-[var(--radius-card)] p-4 flex gap-3" style="background: var(--color-error-surface);">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center" style="background: rgba(255,59,48,0.12);">
+                <i data-lucide="alert-triangle" class="w-4 h-4" style="color: var(--color-error);"></i>
+            </div>
+            <div>
+                <h3 class="text-[14px] font-semibold" style="color: var(--color-error);">⚠️ 重要提示</h3>
+                <p class="text-[13px] mt-1 leading-relaxed" style="color: var(--color-error); opacity: 0.85;">
+                    需要港澳通行证 + 有效签注（香港+澳门各一次），请提前办理，确保行程顺利。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HIGHLIGHTS PILLS ===== -->
+    <section class="mt-6 px-4">
+        <h3 class="text-[20px] font-bold text-[var(--color-text-800)] mb-3 tracking-tight">行程亮点</h3>
+        <div class="pill-scroll flex gap-2 pb-1 -mx-4 px-4">
+            <span class="apple-card inline-flex items-center gap-1.5 px-4 py-2.5 text-[13px] font-medium whitespace-nowrap text-[var(--color-text-700)]">
+                🌊 港珠澳大桥
+            </span>
+            <span class="apple-card inline-flex items-center gap-1.5 px-4 py-2.5 text-[13px] font-medium whitespace-nowrap text-[var(--color-text-700)]">
+                🎢 海洋公园
+            </span>
+            <span class="apple-card inline-flex items-center gap-1.5 px-4 py-2.5 text-[13px] font-medium whitespace-nowrap text-[var(--color-text-700)]">
+                🎓 香港大学
+            </span>
+            <span class="apple-card inline-flex items-center gap-1.5 px-4 py-2.5 text-[13px] font-medium whitespace-nowrap text-[var(--color-text-700)]">
+                🎓 澳门大学
+            </span>
+            <span class="apple-card inline-flex items-center gap-1.5 px-4 py-2.5 text-[13px] font-medium whitespace-nowrap text-[var(--color-text-700)]">
+                🎓 中山大学
+            </span>
+            <span class="apple-card inline-flex items-center gap-1.5 px-4 py-2.5 text-[13px] font-medium whitespace-nowrap text-[var(--color-text-700)]">
+                🎰 港澳双城
+            </span>
+            <span class="apple-card inline-flex items-center gap-1.5 px-4 py-2.5 text-[13px] font-medium whitespace-nowrap text-[var(--color-text-700)]">
+                🌊 维多利亚港
+            </span>
+            <span class="apple-card inline-flex items-center gap-1.5 px-4 py-2.5 text-[13px] font-medium whitespace-nowrap text-[var(--color-text-700)]">
+                💡 深圳科技馆
+            </span>
+        </div>
+    </section>
+
+    <!-- ===== ITINERARY ACCORDION ===== -->
+    <section class="mt-8 px-4">
+        <h3 class="text-[20px] font-bold text-[var(--color-text-800)] mb-4 tracking-tight">详细行程</h3>
+        <div class="flex flex-col gap-3" id="itinerary-accordion">
+
+            <!-- Day 1 -->
+            <div class="apple-card overflow-hidden">
+                <button class="accordion-trigger w-full flex items-center gap-3 p-4 text-left" onclick="toggleAccordion(this)">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,122,255,0.1);">
+                        <span class="text-[14px] font-bold" style="color: var(--color-brand-500);">D1</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="text-[15px] font-semibold text-[var(--color-text-800)]">贵阳 → 广州</h4>
+                        <p class="text-[12px] text-[var(--color-text-400)] mt-0.5">开营破冰 · 历史启蒙</p>
+                    </div>
+                    <i data-lucide="chevron-down" class="w-5 h-5 text-[var(--color-text-400)] accordion-chevron flex-shrink-0"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-4 pb-4">
+                        <img src="../assets/yga-huangpu.jpg" alt="黄埔军校" class="w-full rounded-xl mb-2" style="height:140px;object-fit:cover;">
+                        <div class="h-px bg-[var(--color-bg-300)] mb-3"></div>
+                        <ul class="space-y-2.5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">上午</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">乘坐高铁前往广州（约4小时），沿途欣赏黔粤风光</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">下午</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">抵达广州，开营仪式 + 破冰活动</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">傍晚</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">参观黄埔军校旧址，感受百年军校历史</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="apple-card overflow-hidden">
+                <button class="accordion-trigger w-full flex items-center gap-3 p-4 text-left" onclick="toggleAccordion(this)">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,122,255,0.1);">
+                        <span class="text-[14px] font-bold" style="color: var(--color-brand-500);">D2</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="text-[15px] font-semibold text-[var(--color-text-800)]">百年名校</h4>
+                        <p class="text-[12px] text-[var(--color-text-400)] mt-0.5">中山大学 · 深圳科技馆</p>
+                    </div>
+                    <i data-lucide="chevron-down" class="w-5 h-5 text-[var(--color-text-400)] accordion-chevron flex-shrink-0"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-4 pb-4">
+                        <img src="../assets/yga-zhongshan-dx.jpg" alt="中山大学" class="w-full rounded-xl mb-2" style="height:140px;object-fit:cover;">
+                        <div class="h-px bg-[var(--color-bg-300)] mb-3"></div>
+                        <ul class="space-y-2.5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">上午</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">走进中山大学，参观重点实验室，与学霸面对面交流分享，体验高校食堂午餐</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">下午</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">前往深圳科技馆，探索950+互动展项，感受前沿科技魅力</span>
+                            </li>
+                        </ul>
+                        <img src="../assets/yga-shenzhenkeji.jpg" alt="深圳科技馆" class="w-full rounded-xl mb-2 mt-2" style="height:140px;object-fit:cover;">
+                        <ul class="space-y-2.5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">晚上</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">入住深圳酒店，研学日记</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="apple-card overflow-hidden">
+                <button class="accordion-trigger w-full flex items-center gap-3 p-4 text-left" onclick="toggleAccordion(this)">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,122,255,0.1);">
+                        <span class="text-[14px] font-bold" style="color: var(--color-brand-500);">D3</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="text-[15px] font-semibold text-[var(--color-text-800)]">港江揽胜</h4>
+                        <p class="text-[12px] text-[var(--color-text-400)] mt-0.5">香港大学 · 太平山 · 维港</p>
+                    </div>
+                    <i data-lucide="chevron-down" class="w-5 h-5 text-[var(--color-text-400)] accordion-chevron flex-shrink-0"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-4 pb-4">
+                        <img src="../assets/yga-xianggangdx.jpg" alt="香港大学" class="w-full rounded-xl mb-2" style="height:140px;object-fit:cover;">
+                        <div class="h-px bg-[var(--color-bg-300)] mb-3"></div>
+                        <ul class="space-y-2.5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">上午</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">进入香港大学，参访校园地标，与港大学霸深度交流</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">下午</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">太平山顶缆车观光，乘坐经典叮叮车穿越港岛，金紫荆广场打卡</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">晚上</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">维多利亚港夜游，感受东方之珠的璀璨夜景</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="apple-card overflow-hidden">
+                <button class="accordion-trigger w-full flex items-center gap-3 p-4 text-left" onclick="toggleAccordion(this)">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,122,255,0.1);">
+                        <span class="text-[14px] font-bold" style="color: var(--color-brand-500);">D4</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="text-[15px] font-semibold text-[var(--color-text-800)]">趣游湾区</h4>
+                        <p class="text-[12px] text-[var(--color-text-400)] mt-0.5">海洋公园 · 港珠澳大桥</p>
+                    </div>
+                    <i data-lucide="chevron-down" class="w-5 h-5 text-[var(--color-text-400)] accordion-chevron flex-shrink-0"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-4 pb-4">
+                        <img src="../assets/yga-haiyanggongyuan.jpg" alt="海洋公园" class="w-full rounded-xl mb-2" style="height:140px;object-fit:cover;">
+                        <div class="h-px bg-[var(--color-bg-300)] mb-3"></div>
+                        <ul class="space-y-2.5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">全天</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">香港海洋公园全天畅玩，海洋奇观 + 刺激机动游戏</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">傍晚</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">乘坐金巴穿越港珠澳大桥，体验世界最长跨海大桥的震撼</span>
+                            </li>
+                        </ul>
+                        <img src="../assets/yga-gangzhuhao.jpg" alt="港珠澳大桥" class="w-full rounded-xl mb-2 mt-2" style="height:140px;object-fit:cover;">
+                        <ul class="space-y-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">晚上</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">抵达澳门，入住酒店</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="apple-card overflow-hidden">
+                <button class="accordion-trigger w-full flex items-center gap-3 p-4 text-left" onclick="toggleAccordion(this)">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,122,255,0.1);">
+                        <span class="text-[14px] font-bold" style="color: var(--color-brand-500);">D5</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="text-[15px] font-semibold text-[var(--color-text-800)]">澳域寻史</h4>
+                        <p class="text-[12px] text-[var(--color-text-400)] mt-0.5">澳门大学 · 大三巴 · 专题课</p>
+                    </div>
+                    <i data-lucide="chevron-down" class="w-5 h-5 text-[var(--color-text-400)] accordion-chevron flex-shrink-0"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-4 pb-4">
+                        <img src="../assets/yga-aomen-dx.jpg" alt="澳门大学" class="w-full rounded-xl mb-2" style="height:140px;object-fit:cover;">
+                        <div class="h-px bg-[var(--color-bg-300)] mb-3"></div>
+                        <ul class="space-y-2.5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">上午</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">走进澳门大学，参观重点实验室，体验中西合璧的校园文化</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">下午</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">打卡大三巴牌坊、参观澳门博物馆，了解四百年的中西交融史</span>
+                            </li>
+                        </ul>
+                        <img src="../assets/yga-dasangba.jpg" alt="大三巴牌坊" class="w-full rounded-xl mb-2 mt-2" style="height:140px;object-fit:cover;">
+                        <ul class="space-y-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">晚上</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">港珠澳大桥专题研学课，深度了解超级工程背后的科技与故事</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 6 -->
+            <div class="apple-card overflow-hidden">
+                <button class="accordion-trigger w-full flex items-center gap-3 p-4 text-left" onclick="toggleAccordion(this)">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(0,122,255,0.1);">
+                        <span class="text-[14px] font-bold" style="color: var(--color-brand-500);">D6</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="text-[15px] font-semibold text-[var(--color-text-800)]">岭南溯源</h4>
+                        <p class="text-[12px] text-[var(--color-text-400)] mt-0.5">省博物馆 · 广州塔 · 返程</p>
+                    </div>
+                    <i data-lucide="chevron-down" class="w-5 h-5 text-[var(--color-text-400)] accordion-chevron flex-shrink-0"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-4 pb-4">
+                        <div class="h-px bg-[var(--color-bg-300)] mb-3"></div>
+                        <ul class="space-y-2.5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">上午</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">参观广东省博物馆，领略岭南文化精髓</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">下午</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">广州塔外观打卡，小蛮腰合影留念</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-[11px] font-medium text-[var(--color-text-400)] bg-[var(--color-bg-200)] rounded-md px-2 py-0.5 whitespace-nowrap mt-0.5">傍晚</span>
+                                <span class="text-[14px] text-[var(--color-text-700)] leading-relaxed">结营仪式，乘坐高铁返回贵阳，研学之旅圆满结束</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== DATE ===== -->
+    <section class="mt-8 px-4">
+        <div class="apple-card p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: rgba(0,122,255,0.1);">
+                <i data-lucide="calendar" class="w-6 h-6" style="color: var(--color-brand-500);"></i>
+            </div>
+            <div>
+                <h4 class="text-[15px] font-semibold text-[var(--color-text-800)]">出发日期</h4>
+                <p class="text-[14px] text-[var(--color-brand-500)] font-medium mt-0.5">7月11日（第一期）</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEES ===== -->
+    <section class="mt-6 px-4">
+        <h3 class="text-[20px] font-bold text-[var(--color-text-800)] mb-4 tracking-tight">费用说明</h3>
+        <div class="flex flex-col gap-3">
+            <!-- Included -->
+            <div class="apple-card p-4">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-6 h-6 rounded-full flex items-center justify-center" style="background: rgba(52,199,89,0.12);">
+                        <i data-lucide="check" class="w-3.5 h-3.5" style="color: var(--state-success);"></i>
+                    </div>
+                    <h4 class="text-[15px] font-semibold text-[var(--color-text-800)]">费用包含</h4>
+                </div>
+                <ul class="space-y-2 text-[14px] text-[var(--color-text-600)] leading-relaxed">
+                    <li class="flex items-start gap-2">
+                        <span class="text-[var(--color-text-300)] mt-1.5">·</span>
+                        <span>贵阳-广州往返高铁票</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-[var(--color-text-300)] mt-1.5">·</span>
+                        <span>行程内全程住宿（4-5人标间）</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-[var(--color-text-300)] mt-1.5">·</span>
+                        <span>行程内所有餐饮</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-[var(--color-text-300)] mt-1.5">·</span>
+                        <span>景点门票及研学活动费用</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-[var(--color-text-300)] mt-1.5">·</span>
+                        <span>港珠澳大桥金巴车票</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-[var(--color-text-300)] mt-1.5">·</span>
+                        <span>专业研学导师全程陪同</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-[var(--color-text-300)] mt-1.5">·</span>
+                        <span>研学保险</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Not Included -->
+            <div class="apple-card p-4">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-6 h-6 rounded-full flex items-center justify-center" style="background: rgba(255,59,48,0.1);">
+                        <i data-lucide="x" class="w-3.5 h-3.5" style="color: var(--color-error);"></i>
+                    </div>
+                    <h4 class="text-[15px] font-semibold text-[var(--color-text-800)]">费用不含</h4>
+                </div>
+                <ul class="space-y-2 text-[14px] text-[var(--color-text-600)] leading-relaxed">
+                    <li class="flex items-start gap-2">
+                        <span class="text-[var(--color-text-300)] mt-1.5">·</span>
+                        <span>港澳通行证办理及签注费用</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-[var(--color-text-300)] mt-1.5">·</span>
+                        <span>个人消费及购物</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-[var(--color-text-300)] mt-1.5">·</span>
+                        <span>因个人原因产生的额外费用</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QR CODE ===== -->
+    <section class="mt-8 px-4 mb-6">
+        <div class="apple-card p-6 flex flex-col items-center text-center">
+            <h4 class="text-[15px] font-semibold text-[var(--color-text-800)] mb-1">扫码咨询报名</h4>
+            <p class="text-[13px] text-[var(--color-text-400)] mb-4">长按识别二维码，添加研学顾问</p>
+            <div id="qrCodeYuegangao" class="w-40 h-40 rounded-2xl bg-[var(--color-bg-200)] flex items-center justify-center overflow-hidden">
+                <span class="text-[13px] text-[var(--color-text-400)]">二维码加载中</span>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===== FIXED CTA ===== -->
+<div class="fixed bottom-0 left-0 right-0 z-50 pb-safe">
+    <div class="glass-fixed px-4 py-3">
+        <button data-dom-id="cta-signup-yga"
+                class="w-full h-12 rounded-full text-white text-[16px] font-semibold active:opacity-80 transition-opacity"
+                style="background: var(--color-brand-500);">
+            立即报名 ¥5,880/人
+        </button>
+    </div>
+</div>
+
+<script>
+    // Accordion logic
+    function toggleAccordion(trigger) {
+        const card = trigger.closest('.apple-card');
+        const content = card.querySelector('.accordion-content');
+        const chevron = trigger.querySelector('.accordion-chevron');
+        const isOpen = content.classList.contains('open');
+
+        // Close all others
+        document.querySelectorAll('.accordion-content.open').forEach(el => {
+            if (el !== content) {
+                el.classList.remove('open');
+                el.closest('.apple-card').querySelector('.accordion-chevron').classList.remove('rotated');
+            }
+        });
+
+        // Toggle current
+        content.classList.toggle('open');
+        chevron.classList.toggle('rotated');
+    }
+
+    // Initialize Lucide icons
+    lucide.createIcons();
+</script>
+
+    <style>
+      /* Frosted glass */
+      .glass-header {
+        background: rgba(255, 255, 255, 0.72);
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+      }
+      .glass-fixed {
+        background: rgba(255, 255, 255, 0.78);
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        border-top: 0.5px solid rgba(0, 0, 0, 0.08);
+      }
+      /* Apple card shadow */
+      .apple-card {
+        background: var(--color-bg-50);
+        border-radius: var(--radius-card);
+        box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 1px 2px -1px rgba(0,0,0,0.05);
+      }
+      .apple-card-elevated {
+        background: var(--color-bg-50);
+        border-radius: var(--radius-card);
+        box-shadow: 0 4px 8px -2px rgba(0,0,0,0.06), 0 2px 4px -2px rgba(0,0,0,0.05);
+      }
+      /* Accordion */
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), padding 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .accordion-content.open {
+        max-height: 1000px;
+      }
+      .accordion-chevron {
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .accordion-chevron.rotated {
+        transform: rotate(180deg);
+      }
+      /* Pill scroll */
+      .pill-scroll {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .pill-scroll::-webkit-scrollbar { display: none; }
+      .pill-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+      /* Safe areas */
+      .pb-safe { padding-bottom: max(24px, env(safe-area-inset-bottom)); }
+      .pt-safe { padding-top: max(12px, env(safe-area-inset-top)); }
+      /* Timeline line */
+      .timeline-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--color-brand-500);
+        flex-shrink: 0;
+        position: relative;
+        z-index: 1;
+      }
+      .timeline-dot-ring {
+        box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2);
+      }
+    </style>
+</body>
+</html>

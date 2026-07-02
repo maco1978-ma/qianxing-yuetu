@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线报名 — 黔行阅途研学</title>
+    <style id="theme-vars">
+{"color":{"brand":{"brand-900":{"hex":"#00275a","opacity":"1"},"brand-800":{"hex":"#003b82","opacity":"1"},"brand-700":{"hex":"#004fad","opacity":"1"},"brand-600":{"hex":"#0064d6","opacity":"1"},"brand-500":{"hex":"#007aff","opacity":"1","isPrimary":true},"brand-400":{"hex":"#2e8dff","opacity":"1"},"brand-300":{"hex":"#66abff","opacity":"1"},"brand-200":{"hex":"#9fcbff","opacity":"1"},"brand-100":{"hex":"#cfe5ff","opacity":"1"},"brand-50":{"hex":"#e8f2ff","opacity":"1"}},"background":{"background-900":{"hex":"#000000","opacity":"1"},"background-800":{"hex":"#1c1c1e","opacity":"1"},"background-700":{"hex":"#3a3a3c","opacity":"1"},"background-600":{"hex":"#8e8e93","opacity":"1"},"background-500":{"hex":"#aeaeb2","opacity":"1"},"background-400":{"hex":"#d1d1d6","opacity":"1"},"background-300":{"hex":"#e5e5ea","opacity":"1"},"background-200":{"hex":"#f2f2f7","opacity":"1","isPrimary":true},"background-100":{"hex":"#f7f7fa","opacity":"1"},"background-50":{"hex":"#ffffff","opacity":"1"}},"text":{"text-900":{"hex":"#000000","opacity":"1"},"text-800":{"hex":"#1d1d1f","opacity":"1"},"text-700":{"hex":"#3c3c43","opacity":"1"},"text-600":{"hex":"#48484a","opacity":"1"},"text-500":{"hex":"#6e6e73","opacity":"1","isPrimary":true},"text-400":{"hex":"#8e8e93","opacity":"1"},"text-300":{"hex":"#aeaeb2","opacity":"1"},"text-200":{"hex":"#c7c7cc","opacity":"1"},"text-100":{"hex":"#e3e3e8","opacity":"1"},"text-50":{"hex":"#f5f5f7","opacity":"1"}},"icon":{"icon-900":{"hex":"#1d1d1f","opacity":"1"},"icon-800":{"hex":"#2c2c2e","opacity":"1"},"icon-700":{"hex":"#48484a","opacity":"1"},"icon-600":{"hex":"#6e6e73","opacity":"1","isPrimary":true},"icon-500":{"hex":"#8e8e93","opacity":"1"},"icon-400":{"hex":"#aeaeb2","opacity":"1"},"icon-300":{"hex":"#c7c7cc","opacity":"1"},"icon-200":{"hex":"#d1d1d6","opacity":"1"},"icon-100":{"hex":"#e5e5ea","opacity":"1"},"icon-50":{"hex":"#f5f5f7","opacity":"1"}},"state-success":{"state-success":{"hex":"#34c759","opacity":"1","isPrimary":true},"state-success-dark":{"hex":"#30d158","opacity":"1"},"state-success-surface":{"hex":"#e9f9ee","opacity":"1"},"state-success-foreground":{"hex":"#ffffff","opacity":"1"}},"state-error":{"state-error":{"hex":"#ff3b30","opacity":"1","isPrimary":true},"state-error-dark":{"hex":"#ff453a","opacity":"1"},"state-error-surface":{"hex":"#ffecea","opacity":"1"},"state-error-foreground":{"hex":"#ffffff","opacity":"1"}},"dark":{"background":{"hex":"#000000","opacity":"1"},"card":{"hex":"#1c1c1e","opacity":"1"},"popover":{"hex":"#3a3a3c","opacity":"1"},"border":{"hex":"#3a3a3c","opacity":"1"},"primary":{"hex":"#2e8dff","opacity":"1","isPrimary":true},"muted-foreground":{"hex":"#8e8e93","opacity":"1"},"foreground":{"hex":"#f5f5f7","opacity":"1"},"popover-foreground":{"hex":"#f5f5f7","opacity":"1"},"icon":{"hex":"#f5f5f7","opacity":"1"},"success-foreground":{"hex":"#ffffff","opacity":"1"}},"sidebar":{"sidebar-foreground":{"hex":"#1d1d1f","opacity":"1"},"sidebar-accent-foreground":{"hex":"#1d1d1f","opacity":"1"},"sidebar-primary":{"hex":"#007aff","opacity":"1","isPrimary":true},"sidebar-ring":{"hex":"#007aff","opacity":"1"},"sidebar-accent":{"hex":"#e5e5ea","opacity":"1"},"sidebar-border":{"hex":"#e5e5ea","opacity":"1"},"sidebar":{"hex":"#f2f2f7","opacity":"1"},"sidebar-primary-foreground":{"hex":"#ffffff","opacity":"1"}},"chart":{"chart-4":{"hex":"#5e5ce6","opacity":"1"},"chart-5":{"hex":"#bf5af2","opacity":"1"},"chart-2":{"hex":"#2e8dff","opacity":"1"},"chart-3":{"hex":"#ff9f0a","opacity":"1","isPrimary":true},"chart-1":{"hex":"#30d158","opacity":"1"}}},"font":{"family":{"font-sans":"DM Sans, ui-sans-serif, sans-serif, system-ui","font-serif":"DM Sans, ui-sans-serif, sans-serif, system-ui","font-mono":"JetBrains Mono, monospace"},"size":{},"weight":{},"lineHeight":{}},"shadow":{"shadow-2xs·Hairline":{"xOffset":"0px","yOffset":"1px","blur":"2px","spread":"-1px","color":{"hex":"#000000","opacity":"0.04"}},"shadow-xs·Subtle":{"xOffset":"0px","yOffset":"1px","blur":"2px","spread":"0px","color":{"hex":"#000000","opacity":"0.04"}},"shadow-sm·Card":{"layers":[{"xOffset":"0px","yOffset":"1px","blur":"2px","spread":"0px","color":{"hex":"#000000","opacity":"0.05"}},{"xOffset":"0px","yOffset":"1px","blur":"3px","spread":"-1px","color":{"hex":"#000000","opacity":"0.05"}}]},"shadow·Raised":{"layers":[{"xOffset":"0px","yOffset":"2px","blur":"4px","spread":"-1px","color":{"hex":"#000000","opacity":"0.06"}},{"xOffset":"0px","yOffset":"1px","blur":"2px","spread":"-1px","color":{"hex":"#000000","opacity":"0.05"}}]},"shadow-md·Card Hover":{"layers":[{"xOffset":"0px","yOffset":"4px","blur":"8px","spread":"-2px","color":{"hex":"#000000","opacity":"0.06"}},{"xOffset":"0px","yOffset":"2px","blur":"4px","spread":"-2px","color":{"hex":"#000000","opacity":"0.05"}}]},"shadow-lg·Float":{"layers":[{"xOffset":"0px","yOffset":"8px","blur":"24px","spread":"-8px","color":{"hex":"#000000","opacity":"0.08"}},{"xOffset":"0px","yOffset":"4px","blur":"8px","spread":"-4px","color":{"hex":"#000000","opacity":"0.05"}}]},"shadow-xl·Overlay":{"layers":[{"xOffset":"0px","yOffset":"16px","blur":"40px","spread":"-10px","color":{"hex":"#000000","opacity":"0.10"}},{"xOffset":"0px","yOffset":"8px","blur":"16px","spread":"-8px","color":{"hex":"#000000","opacity":"0.06"}}]},"shadow-2xl·Modal":{"xOffset":"0px","yOffset":"24px","blur":"64px","spread":"-12px","color":{"hex":"#000000","opacity":"0.12"}}},"radius":{"radius":"19.2px"},"spacing":{"spacing":"3.84px"},"size":{}}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="min-h-screen">
+    <style type="text/tailwindcss">
+  
+  @layer base {
+    body { background: var(--background-50); color: var(--text-800); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+    </style>
+    <!-- Frosted Glass Header -->
+    <header class="frost-header">
+        <div style="max-width:100%; padding:0 16px; height:56px; display:flex; align-items:center; justify-content:center; position:relative;">
+            <button data-dom-id="back-home" style="position:absolute; left:16px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; padding:8px; display:flex; align-items:center; justify-content:center; color:var(--brand-500);" aria-label="返回">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <span style="font-size:17px; font-weight:600; color:var(--text-800);">在线报名</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top:72px; padding-bottom:40px; padding-left:16px; padding-right:16px; max-width:480px; margin:0 auto;">
+
+        <!-- Brand Trust Banner -->
+        <div class="animate-in delay-1" style="background:var(--background-100); border-radius:12px; padding:12px 16px; display:flex; align-items:center; gap:10px; margin-bottom:24px;">
+            <div style="width:32px; height:32px; border-radius:8px; background:var(--brand-50); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--brand-500)">
+                    <path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5zm0 4l4 4h-3v4h-2v-4H8l4-4z"/>
+                </svg>
+            </div>
+            <div style="font-size:13px; color:var(--text-500); line-height:1.4;">
+                <span style="font-weight:600; color:var(--text-700);">贵州省新华书店</span> · 黔行阅途研学 — 73年国企信誉保障
+            </div>
+        </div>
+
+        <!-- Section 1 — 孩子信息 -->
+        <div class="animate-in delay-2" style="margin-bottom:16px;">
+            <div class="section-label">孩子信息</div>
+            <div class="form-section">
+                <div class="form-row" style="display:flex; flex-direction:column; padding-top:4px; padding-bottom:4px;">
+                    <div class="input-wrapper">
+                        <label>孩子姓名 <span style="color:var(--state-error);">*</span></label>
+                        <input type="text" id="childName" class="form-input" placeholder="请输入孩子姓名" required>
+                    </div>
+                </div>
+                <div class="form-row" style="display:flex; flex-direction:column; padding-top:4px; padding-bottom:4px;">
+                    <div class="input-wrapper">
+                        <label>孩子年龄</label>
+                        <input type="number" id="childAge" class="form-input" placeholder="请输入孩子年龄" min="6" max="18">
+                    </div>
+                </div>
+                <div class="form-row" style="display:flex; flex-direction:column; padding-top:4px; padding-bottom:4px;">
+                    <div class="input-wrapper">
+                        <label>意向线路 <span style="color:var(--state-error);">*</span></label>
+                        <select id="routeSelect" class="form-select" required style="padding-right:28px;">
+                            <option value="">请选择意向线路</option>
+                            <option value="北京6天">北京6天文化深度研学营 · ¥6,580/人</option>
+                            <option value="沪宁锡7天">沪宁锡7天人文科技迪士尼 · ¥5,980/人</option>
+                            <option value="粤港澳6天">粤港澳6天名校科技探索营 · ¥5,880/人</option>
+                        </select>
+                        <span class="select-arrow" style="position:absolute; right:0; top:50%; transform:translateY(-50%);">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2 — 家长信息 -->
+        <div class="animate-in delay-3" style="margin-bottom:16px;">
+            <div class="section-label">家长信息</div>
+            <div class="form-section">
+                <div class="form-row" style="display:flex; flex-direction:column; padding-top:4px; padding-bottom:4px;">
+                    <div class="input-wrapper">
+                        <label>家长姓名 <span style="color:var(--state-error);">*</span></label>
+                        <input type="text" id="parentName" class="form-input" placeholder="请输入家长姓名" required>
+                    </div>
+                </div>
+                <div class="form-row" style="display:flex; flex-direction:column; padding-top:4px; padding-bottom:4px;">
+                    <div class="input-wrapper">
+                        <label>联系电话 <span style="color:var(--state-error);">*</span></label>
+                        <input type="tel" id="parentPhone" class="form-input" placeholder="请输入手机号码" maxlength="11" pattern="1[3-9]\d{9}" required>
+                    </div>
+                </div>
+                <div class="input-error" id="phoneError">请输入正确的11位手机号码</div>
+            </div>
+        </div>
+
+        <!-- Section 3 — 报名门店 -->
+        <div class="animate-in delay-4" style="margin-bottom:16px;">
+            <div class="section-label">报名门店</div>
+            <div style="font-size:13px; color:var(--text-500); padding:0 4px; margin-bottom:8px; line-height:1.4;">
+                全省110家新华书店门店均可报名，请选择离您最近的门店
+            </div>
+            <div class="form-section">
+                <div class="form-row" style="display:flex; flex-direction:column; padding-top:4px; padding-bottom:4px;">
+                    <div class="input-wrapper">
+                        <label>所在地区 <span style="color:var(--state-error);">*</span></label>
+                        <select id="citySelect" class="form-select" required style="padding-right:28px;">
+                            <option value="">请选择城市</option>
+                            <option value="贵阳市">贵阳市</option>
+                            <option value="遵义市">遵义市</option>
+                            <option value="六盘水市">六盘水市</option>
+                            <option value="安顺市">安顺市</option>
+                            <option value="毕节市">毕节市</option>
+                            <option value="铜仁市">铜仁市</option>
+                            <option value="黔东南州">黔东南州</option>
+                            <option value="黔南州">黔南州</option>
+                            <option value="黔西南州">黔西南州</option>
+                        </select>
+                        <span class="select-arrow" style="position:absolute; right:0; top:50%; transform:translateY(-50%);">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-row" style="display:flex; flex-direction:column; padding-top:4px; padding-bottom:4px;">
+                    <div class="input-wrapper">
+                        <label>报名门店 <span style="color:var(--state-error);">*</span></label>
+                        <select id="storeSelect" class="form-select" required style="padding-right:28px;" disabled>
+                            <option value="">请先选择城市</option>
+                        </select>
+                        <span class="select-arrow" style="position:absolute; right:0; top:50%; transform:translateY(-50%);">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Selected store badge -->
+            <div id="storeBadge" style="margin-top:10px; display:none; padding:0 4px;">
+                <div class="store-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span id="storeBadgeText"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4 — 备注 -->
+        <div class="animate-in delay-5" style="margin-bottom:24px;">
+            <div class="section-label">备注</div>
+            <div class="form-section">
+                <div class="form-row" style="padding-top:8px; padding-bottom:12px;">
+                    <textarea id="remark" class="form-textarea" placeholder="如有特殊需求请备注（饮食禁忌、过敏信息等）" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agreement -->
+        <div class="animate-in delay-6" style="display:flex; align-items:flex-start; gap:12px; margin-bottom:20px; padding:0 4px;">
+            <div class="agreement-check" id="agreementCheck" role="checkbox" aria-checked="false" tabindex="0">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            <div style="font-size:14px; color:var(--text-600); line-height:1.5; padding-top:2px;">
+                我已阅读并同意<a href="#" style="color:var(--brand-500); text-decoration:none;">《研学夏令营报名须知》</a>和<a href="#" style="color:var(--brand-500); text-decoration:none;">《安全责任书》</a>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="animate-in delay-6" style="margin-bottom:20px;">
+            <button class="submit-btn" id="submitBtn" disabled>提交报名</button>
+        </div>
+
+        <!-- Bottom Note -->
+        <div class="animate-in delay-7" style="text-align:center; font-size:13px; color:var(--text-400); margin-bottom:24px; line-height:1.5;">
+            提交后，工作人员将在24小时内与您联系确认报名信息
+        </div>
+
+        <!-- Contact Card -->
+        <div class="animate-in delay-7" style="margin-bottom:32px;">
+            <div style="font-size:15px; font-weight:600; color:var(--text-800); padding:0 4px; margin-bottom:10px;">联系我们</div>
+            <div class="contact-card">
+                <div class="contact-item">
+                    <div class="contact-icon" style="background:var(--brand-50); color:var(--brand-500);">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div style="font-size:15px; color:var(--text-800); font-weight:500;">咨询电话</div>
+                        <div style="font-size:14px; color:var(--text-500); margin-top:2px;">XXX-XXXX-XXXX</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon" style="background:var(--state-success-surface); color:var(--state-success);">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div style="font-size:15px; color:var(--text-800); font-weight:500;">报名地址</div>
+                        <div style="font-size:14px; color:var(--text-500); margin-top:2px;">全省110家新华书店门店均可报名</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon" style="background:var(--background-100); color:var(--icon-600);">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div style="font-size:15px; color:var(--text-800); font-weight:500;">工作时间</div>
+                        <div style="font-size:14px; color:var(--text-500); margin-top:2px;">周一至周日 9:00-18:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // Store data
+        const storeData = {
+            "贵阳市": ["云岩区新华书店", "南明区新华书店", "观山湖区新华书店", "花溪区新华书店", "乌当区新华书店", "白云区新华书店", "清镇市新华书店", "修文县新华书店", "息烽县新华书店", "开阳县新华书店"],
+            "遵义市": ["红花岗区新华书店", "汇川区新华书店", "播州区新华书店", "桐梓县新华书店", "绥阳县新华书店", "湄潭县新华书店", "凤冈县新华书店", "余庆县新华书店", "仁怀市新华书店", "赤水市新华书店"],
+            "六盘水市": ["钟山区新华书店", "六枝特区新华书店", "水城区新华书店", "盘州市新华书店"],
+            "安顺市": ["西秀区新华书店", "平坝区新华书店", "普定县新华书店", "镇宁县新华书店", "关岭县新华书店", "紫云县新华书店"],
+            "毕节市": ["七星关区新华书店", "大方县新华书店", "黔西市新华书店", "织金县新华书店", "金沙县新华书店", "纳雍县新华书店", "威宁县新华书店", "赫章县新华书店"],
+            "铜仁市": ["碧江区新华书店", "万山区新华书店", "江口县新华书店", "玉屏县新华书店", "石阡县新华书店", "思南县新华书店", "德江县新华书店"],
+            "黔东南州": ["凯里市新华书店", "黄平县新华书店", "镇远县新华书店", "黎平县新华书店", "榕江县新华书店", "从江县新华书店", "台江县新华书店", "雷山县新华书店"],
+            "黔南州": ["都匀市新华书店", "福泉市新华书店", "荔波县新华书店", "独山县新华书店", "平塘县新华书店", "三都县新华书店", "瓮安县新华书店", "贵定县新华书店"],
+            "黔西南州": ["兴义市新华书店", "兴仁市新华书店", "安龙县新华书店", "贞丰县新华书店", "晴隆县新华书店", "普安县新华书店", "册亨县新华书店", "望谟县新华书店"]
+        };
+
+        // DOM elements
+        const citySelect = document.getElementById('citySelect');
+        const storeSelect = document.getElementById('storeSelect');
+        const storeBadge = document.getElementById('storeBadge');
+        const storeBadgeText = document.getElementById('storeBadgeText');
+        const agreementCheck = document.getElementById('agreementCheck');
+        const submitBtn = document.getElementById('submitBtn');
+        const phoneInput = document.getElementById('parentPhone');
+        const phoneError = document.getElementById('phoneError');
+
+        let isAgreed = false;
+
+        // City selector onChange
+        citySelect.addEventListener('change', function() {
+            const city = this.value;
+            storeSelect.innerHTML = '';
+
+            if (city && storeData[city]) {
+                storeSelect.disabled = false;
+                const defaultOpt = document.createElement('option');
+                defaultOpt.value = '';
+                defaultOpt.textContent = '请选择报名门店';
+                defaultOpt.style.color = 'var(--background-400)';
+                storeSelect.appendChild(defaultOpt);
+
+                storeData[city].forEach(function(store) {
+                    const opt = document.createElement('option');
+                    opt.value = store;
+                    opt.textContent = store;
+                    storeSelect.appendChild(opt);
+                });
+
+                storeBadge.style.display = 'none';
+            } else {
+                storeSelect.disabled = true;
+                const defaultOpt = document.createElement('option');
+                defaultOpt.value = '';
+                defaultOpt.textContent = '请先选择城市';
+                storeSelect.appendChild(defaultOpt);
+                storeBadge.style.display = 'none';
+            }
+
+            validateForm();
+        });
+
+        // Store selector onChange
+        storeSelect.addEventListener('change', function() {
+            const store = this.value;
+            const city = citySelect.value;
+            if (store && city) {
+                storeBadgeText.textContent = city + ' · ' + store;
+                storeBadge.style.display = 'block';
+            } else {
+                storeBadge.style.display = 'none';
+            }
+            validateForm();
+        });
+
+        // Agreement checkbox
+        agreementCheck.addEventListener('click', function() {
+            isAgreed = !isAgreed;
+            this.classList.toggle('checked', isAgreed);
+            this.setAttribute('aria-checked', isAgreed);
+            validateForm();
+        });
+
+        agreementCheck.addEventListener('keydown', function(e) {
+            if (e.key === ' ' || e.key === 'Enter') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+
+        // Phone validation
+        phoneInput.addEventListener('blur', function() {
+            const val = this.value.trim();
+            if (val && !/^1[3-9]\d{9}$/.test(val)) {
+                phoneError.classList.add('visible');
+            } else {
+                phoneError.classList.remove('visible');
+            }
+        });
+
+        phoneInput.addEventListener('input', function() {
+            phoneError.classList.remove('visible');
+            validateForm();
+        });
+
+        // Listen for changes on required fields
+        ['childName', 'childAge', 'routeSelect', 'parentName', 'parentPhone', 'remark'].forEach(function(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('input', validateForm);
+                el.addEventListener('change', validateForm);
+            }
+        });
+
+        // Validate form
+        function validateForm() {
+            const childName = document.getElementById('childName').value.trim();
+            const route = document.getElementById('routeSelect').value;
+            const parentName = document.getElementById('parentName').value.trim();
+            const phone = document.getElementById('parentPhone').value.trim();
+            const city = citySelect.value;
+            const store = storeSelect.value;
+
+            const isValid = childName && route && parentName && phone && /^1[3-9]\d{9}$/.test(phone) && city && store && isAgreed;
+            submitBtn.disabled = !isValid;
+        }
+
+        // Submit
+        submitBtn.addEventListener('click', function() {
+            if (this.disabled) return;
+
+            const formData = {
+                childName: document.getElementById('childName').value.trim(),
+                childAge: document.getElementById('childAge').value,
+                route: document.getElementById('routeSelect').value,
+                parentName: document.getElementById('parentName').value.trim(),
+                phone: document.getElementById('parentPhone').value.trim(),
+                city: citySelect.value,
+                store: storeSelect.value,
+                remark: document.getElementById('remark').value.trim(),
+                source: window.location.href
+            };
+
+            // Disable and show loading
+            this.textContent = '提交中...';
+            this.disabled = true;
+
+            fetch('/api/signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            })
+            .then(function(r) { return r.json(); })
+            .then(function(res) {
+                if (res.success) {
+                    submitBtn.textContent = '✅ 提交成功';
+                    submitBtn.style.background = 'var(--state-success)';
+                    submitBtn.style.boxShadow = 'none';
+                    // 创建成功反馈浮层
+                    var overlay = document.createElement('div');
+                    overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.4);z-index:999;display:flex;align-items:center;justify-content:center;padding:32px;';
+                    overlay.innerHTML =
+                        '<div style="background:white;border-radius:20px;padding:32px;text-align:center;max-width:320px;width:100%;animation:fadeInUp 0.3s ease-out;">' +
+                        '<div style="font-size:48px;margin-bottom:12px;">🎉</div>' +
+                        '<h3 style="font-size:20px;margin-bottom:8px;color:#1d1d1f;">报名成功！</h3>' +
+                        '<p style="font-size:15px;color:#6e6e73;line-height:1.5;margin-bottom:20px;">工作人员将在24小时内与您联系确认报名信息</p>' +
+                        '<button onclick="this.closest(\\'[style*=\\"position:fixed\\"]\\').remove()" style="padding:12px 32px;border:none;border-radius:14px;background:#007aff;color:white;font-size:16px;font-weight:600;cursor:pointer;">我知道了</button>' +
+                        '</div>';
+                    document.body.appendChild(overlay);
+                } else {
+                    submitBtn.textContent = '提交报名';
+                    submitBtn.disabled = false;
+                    validateForm();
+                    alert(res.message || '提交失败，请稍后重试');
+                }
+            })
+            .catch(function() {
+                submitBtn.textContent = '提交报名';
+                submitBtn.disabled = false;
+                validateForm();
+                alert('网络异常，请检查网络后重试');
+            });
+        });
+    </script>
+
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+            background: var(--background-200);
+            color: var(--text-800);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* CSS variable resolution */
+        :root {
+            --brand-500: #007aff;
+            --brand-400: #2e8dff;
+            --brand-300: #66abff;
+            --brand-200: #9fcbff;
+            --brand-100: #cfe5ff;
+            --brand-50: #e8f2ff;
+            --brand-600: #0064d6;
+            --brand-700: #004fad;
+            --brand-800: #003b82;
+            --brand-900: #00275a;
+            --background-50: #ffffff;
+            --background-100: #f7f7fa;
+            --background-200: #f2f2f7;
+            --background-300: #e5e5ea;
+            --background-400: #d1d1d6;
+            --background-500: #aeaeb2;
+            --background-600: #8e8e93;
+            --background-700: #3a3a3c;
+            --background-800: #1c1c1e;
+            --background-900: #000000;
+            --text-50: #f5f5f7;
+            --text-100: #e3e3e8;
+            --text-200: #c7c7cc;
+            --text-300: #aeaeb2;
+            --text-400: #8e8e93;
+            --text-500: #6e6e73;
+            --text-600: #48484a;
+            --text-700: #3c3c43;
+            --text-800: #1d1d1f;
+            --text-900: #000000;
+            --icon-600: #6e6e73;
+            --icon-500: #8e8e93;
+            --state-error: #ff3b30;
+            --state-error-dark: #ff453a;
+            --state-error-surface: #ffecea;
+            --state-success: #34c759;
+            --state-success-surface: #e9f9ee;
+        }
+
+        /* Frosted glass header */
+        .frost-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(255,255,255,0.85);
+            border-bottom: 0.5px solid var(--background-300);
+        }
+
+        /* Apple-style form group */
+        .form-section {
+            background: var(--background-50);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05), 0 1px 3px -1px rgba(0,0,0,0.05);
+        }
+
+        .form-section .form-row {
+            padding: 0 16px;
+        }
+
+        .form-section .form-row + .form-row {
+            border-top: 0.5px solid var(--background-300);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 14px 0;
+            border: none;
+            outline: none;
+            font-size: 17px;
+            color: var(--text-800);
+            background: transparent;
+        }
+
+        .form-input::placeholder {
+            color: var(--background-400);
+        }
+
+        .form-input:focus {
+            outline: none;
+        }
+
+        .form-select {
+            width: 100%;
+            padding: 14px 0;
+            border: none;
+            outline: none;
+            font-size: 17px;
+            color: var(--text-800);
+            background: transparent;
+            -webkit-appearance: none;
+            appearance: none;
+            cursor: pointer;
+        }
+
+        .form-select::placeholder,
+        .form-select option:first-child {
+            color: var(--background-400);
+        }
+
+        .form-select:focus {
+            outline: none;
+        }
+
+        .form-textarea {
+            width: 100%;
+            padding: 14px 0;
+            border: none;
+            outline: none;
+            font-size: 17px;
+            color: var(--text-800);
+            background: transparent;
+            resize: none;
+            min-height: 100px;
+        }
+
+        .form-textarea::placeholder {
+            color: var(--background-400);
+        }
+
+        .form-textarea:focus {
+            outline: none;
+        }
+
+        /* Section label */
+        .section-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-500);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 0 4px;
+            margin-bottom: 8px;
+        }
+
+        /* Required asterisk */
+        .required::after {
+            content: "*";
+            color: var(--state-error);
+            margin-left: 2px;
+        }
+
+        /* Store badge */
+        .store-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            background: var(--brand-50);
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--brand-700);
+        }
+
+        /* Submit button */
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            border-radius: 16px;
+            border: none;
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--background-50);
+            background: var(--brand-500);
+            cursor: pointer;
+            transition: opacity 0.2s, transform 0.1s;
+        }
+
+        .submit-btn:active:not(:disabled) {
+            opacity: 0.8;
+            transform: scale(0.98);
+        }
+
+        .submit-btn:disabled {
+            background: var(--background-400);
+            cursor: not-allowed;
+        }
+
+        /* Agreement */
+        .agreement-check {
+            width: 22px;
+            height: 22px;
+            border-radius: 6px;
+            border: 2px solid var(--background-400);
+            background: var(--background-50);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.2s;
+        }
+
+        .agreement-check.checked {
+            background: var(--brand-500);
+            border-color: var(--brand-500);
+        }
+
+        .agreement-check.checked svg {
+            display: block;
+        }
+
+        .agreement-check svg {
+            display: none;
+            color: white;
+        }
+
+        /* Select arrow */
+        .select-arrow {
+            color: var(--background-400);
+            pointer-events: none;
+            flex-shrink: 0;
+        }
+
+        /* Input field wrapper */
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .input-wrapper label {
+            font-size: 15px;
+            color: var(--text-700);
+            min-width: 72px;
+            flex-shrink: 0;
+            font-weight: 400;
+        }
+
+        /* Error state */
+        .input-error {
+            font-size: 13px;
+            color: var(--state-error);
+            padding-top: 4px;
+            padding-left: 4px;
+            display: none;
+        }
+
+        .input-error.visible {
+            display: block;
+        }
+
+        /* Contact card */
+        .contact-card {
+            background: var(--background-50);
+            border-radius: 16px;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05), 0 1px 3px -1px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 14px 16px;
+        }
+
+        .contact-item + .contact-item {
+            border-top: 0.5px solid var(--background-300);
+        }
+
+        .contact-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 16px;
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.4s ease-out forwards;
+        }
+
+        .delay-1 { animation-delay: 0.05s; opacity: 0; }
+        .delay-2 { animation-delay: 0.1s; opacity: 0; }
+        .delay-3 { animation-delay: 0.15s; opacity: 0; }
+        .delay-4 { animation-delay: 0.2s; opacity: 0; }
+        .delay-5 { animation-delay: 0.25s; opacity: 0; }
+        .delay-6 { animation-delay: 0.3s; opacity: 0; }
+        .delay-7 { animation-delay: 0.35s; opacity: 0; }
+    </style>
+</body>
+</html>
