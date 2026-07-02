@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>研学报名管理后台</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#f2f2f7;color:#1d1d1f;padding:20px;max-width:1200px;margin:0 auto}
+    h1{font-size:24px;font-weight:700;margin-bottom:20px}
+    .stats{display:flex;gap:12px;margin-bottom:20px}
+    .stat-card{background:white;border-radius:12px;padding:16px 20px;flex:1;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+    .stat-card .num{font-size:28px;font-weight:700;color:#007aff}
+    .stat-card .label{font-size:13px;color:#8e8e93;margin-top:4px}
+    .filters{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+    .filters select,.filters input{padding:8px 12px;border:1px solid #d1d1d6;border-radius:8px;font-size:14px;background:white}
+    .filters button{padding:8px 16px;border:none;border-radius:8px;background:#007aff;color:white;font-size:14px;cursor:pointer}
+    .export-btn{padding:8px 16px;border:none;border-radius:8px;background:#34c759;color:white;font-size:14px;cursor:pointer}
+    table{width:100%;background:white;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-collapse:collapse;font-size:14px}
+    th,td{padding:12px 16px;text-align:left;border-bottom:0.5px solid #e5e5ea}
+    th{background:#f7f7fa;font-weight:600;color:#6e6e73;font-size:12px;position:sticky;top:0}
+    .badge{display:inline-block;padding:3px 8px;border-radius:6px;font-size:12px;font-weight:500}
+    .badge-bj{background:#e8f2ff;color:#004fad}
+    .badge-hnx{background:#e9f9ee;color:#1a8a3e}
+    .badge-yga{background:#eee9fe;color:#5e5ce6}
+    @media(max-width:640px){.stats{flex-direction:column}}
+    .info-bar{background:#e8f2ff;border-radius:8px;padding:12px 16px;margin-bottom:16px;font-size:13px;color:#004fad;display:flex;align-items:center;gap:8px}
+    .info-bar a{color:#007aff;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="info-bar">
+    📌 API 数据来自 SCF 云函数
+  </div>
+  <h1>📋 研学报名管理</h1>
+  <div class="stats">
+    <div class="stat-card"><div class="num" id="statTotal">-</div><div class="label">总报名数</div></div>
+    <div class="stat-card"><div class="num" id="statToday">-</div><div class="label">今日新增</div></div>
+  </div>
+  <div class="filters">
+    <select id="filterRoute"><option value="">全部线路</option><option value="北京6天">北京6天</option><option value="沪宁锡7天">沪宁锡7天</option><option value="粤港澳6天">粤港澳6天</option></select>
+    <select id="filterCity"><option value="">全部城市</option><option value="贵阳市">贵阳市</option><option value="遵义市">遵义市</option><option value="六盘水市">六盘水市</option><option value="安顺市">安顺市</option><option value="毕节市">毕节市</option><option value="铜仁市">铜仁市</option><option value="黔东南州">黔东南州</option><option value="黔南州">黔南州</option><option value="黔西南州">黔西南州</option></select>
+    <input id="filterKeyword" placeholder="搜索姓名/电话" style="width:160px">
+    <button onclick="loadData()">查询</button>
+    <button class="export-btn" onclick="exportCSV()">导出CSV</button>
+  </div>
+  <div style="overflow-x:auto;border-radius:12px">
+    <table><thead><tr><th>#</th><th>孩子</th><th>线路</th><th>家长</th><th>电话</th><th>门店</th><th>时间</th></tr></thead><tbody id="tableBody"></tbody></table>
+  </div>
+  <script>
+    var API_BASE = 'https://1411320533-k8vz2c5a8r.ap-guangzhou.tencentscf.com';
+    var badgeMap = {'北京6天':'badge-bj','沪宁锡7天':'badge-hnx','粤港澳6天':'badge-yga'};
+
+    async function loadData(){
+      var r = document.getElementById('filterRoute').value;
+      var c = document.getElementById('filterCity').value;
+      var k = document.getElementById('filterKeyword').value.trim();
+      var p = new URLSearchParams();
+      if(r) p.set('route', r);
+      if(c) p.set('city', c);
+      if(k) p.set('keyword', k);
+      try {
+        var res = await fetch(API_BASE + '/api/submissions?' + p).then(function(r){ return r.json() });
+        if(!res.success) return;
+        var tbody = document.getElementById('tableBody');
+        if(!res.data.length){
+          tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:32px;color:#8e8e93;">暂无报名数据</td></tr>';
+          document.getElementById('statTotal').textContent = '0';
+          document.getElementById('statToday').textContent = '0';
+          return;
+        }
+        document.getElementById('statTotal').textContent = res.data.length;
+        var today = new Date().toISOString().slice(0,10);
+        document.getElementById('statToday').textContent = res.data.filter(function(d){ return d.created_at && d.created_at.startsWith(today); }).length;
+        tbody.innerHTML = res.data.map(function(d,i){
+          return '<tr><td>' + (i+1) + '</td><td><strong>' + esc(d.child_name) + '</strong>' + (d.child_age ? '<br><span style="font-size:12px;color:#8e8e93;">' + esc(d.child_age) + '岁</span>' : '') + '</td><td><span class="badge ' + (badgeMap[d.route]||'') + '">' + esc(d.route) + '</span></td><td>' + esc(d.parent_name) + '</td><td>' + esc(d.phone) + '</td><td>' + esc(d.city) + '<br><span style="font-size:12px;color:#8e8e93;">' + esc(d.store) + '</span></td><td style="font-size:13px;color:#6e6e73;">' + (d.created_at||'') + '</td></tr>';
+        }).join('');
+      } catch(e) {
+        document.getElementById('tableBody').innerHTML = '<tr><td colspan="7" style="text-align:center;padding:32px;color:#ff3b30;">加载失败：' + e.message + '</td></tr>';
+      }
+    }
+
+    function exportCSV(){
+      fetch(API_BASE + '/api/submissions').then(function(r){ return r.json() }).then(function(res){
+        if(!res.data) return;
+        var h = ['ID','孩子姓名','年龄','意向线路','家长姓名','联系电话','所在城市','报名门店','备注','提交时间'];
+        var csv = h.join(',');
+        var rows = res.data.map(function(r){
+          return [r.id, csvEsc(r.child_name), csvEsc(r.child_age), csvEsc(r.route), csvEsc(r.parent_name), csvEsc(r.phone), csvEsc(r.city), csvEsc(r.store), csvEsc(r.remark), r.created_at||''].join(',');
+        });
+        var blob = new Blob(['\uFEFF' + csv + '\n' + rows.join('\n')], {type:'text/csv;charset=utf-8'});
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = '研学报名_' + new Date().toISOString().slice(0,10) + '.csv';
+        a.click();
+      }).catch(function(e){ alert('导出失败：' + e.message); });
+    }
+
+    function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+    function csvEsc(s){ var v = String(s||''); return v.includes(',')||v.includes('"') ? '"' + v.replace(/"/g,'""') + '"' : v; }
+
+    loadData();
+  </script>
+</body>
+</html>

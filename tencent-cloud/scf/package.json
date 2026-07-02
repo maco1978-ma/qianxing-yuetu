@@ -1,0 +1,7 @@
+{
+  "name": "qianxing-yuetu-scf",
+  "version": "1.0.0",
+  "description": "黔行阅途研学 - 腾讯云SCF函数",
+  "main": "index.js",
+  "dependencies": {}
+}

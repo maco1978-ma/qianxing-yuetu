@@ -1,7 +1,8 @@
-node_modules/
-signups.db
-signups.db-shm
-signups.db-wal
-.DS_Store
-*.log
-.env
+.workbuddy/
+# 部署脚本包含敏感信息，排除在版本控制外
+tencent-cloud/cos_fix_meta.py
+tencent-cloud/scf/deploy_scf.py
+*.pyc
+__pycache__/
+server/node_modules/
+server/signups.db*

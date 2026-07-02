@@ -1,0 +1,811 @@
+{
+  "data": [
+    {
+      "id": "page-app",
+      "title": "黔行阅途研学小程序（完整版）",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 0,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/app.html",
+        "interactions": []
+      }
+    },
+    {
+      "id": "page-beijing",
+      "title": "北京6天文化深度研学营",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 408,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/beijing.html",
+        "interactions": []
+      }
+    },
+    {
+      "id": "page-huningxi",
+      "title": "沪宁锡7天人文科技迪士尼",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 780,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/huningxi.html",
+        "interactions": []
+      }
+    },
+    {
+      "id": "page-yuegangao",
+      "title": "粤港澳6天名校科技探索营",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 1200,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/yuegangao.html",
+        "interactions": []
+      }
+    },
+    {
+      "id": "page-signup",
+      "title": "在线报名",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 1584,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/signup.html",
+        "interactions": []
+      }
+    },
+    {
+      "id": "image-001",
+      "title": "首页主视觉",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 0,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hero-home.jpg"
+      }
+    },
+    {
+      "id": "image-005",
+      "title": "天安门广场",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 420,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-tianganmen.jpg"
+      }
+    },
+    {
+      "id": "image-006",
+      "title": "故宫博物院",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 840,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-gugong.jpg"
+      }
+    },
+    {
+      "id": "image-007",
+      "title": "颐和园",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 1260,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-yiheyuan.jpg"
+      }
+    },
+    {
+      "id": "image-008",
+      "title": "清华大学",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 1680,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-qinghua.jpg"
+      }
+    },
+    {
+      "id": "image-009",
+      "title": "居庸关长城",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 2100,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-changcheng.jpg"
+      }
+    },
+    {
+      "id": "image-010",
+      "title": "军事博物馆",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 2520,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-junshi.jpg"
+      }
+    },
+    {
+      "id": "image-011",
+      "title": "北京环球影城",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 2940,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-huanqiu.jpg"
+      }
+    },
+    {
+      "id": "image-012",
+      "title": "鸟巢水立方",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 3360,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-niaochao.jpg"
+      }
+    },
+    {
+      "id": "image-013",
+      "title": "中山陵",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 3780,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hnx-zhongshanling.jpg"
+      }
+    },
+    {
+      "id": "image-014",
+      "title": "夫子庙秦淮河",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 4200,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hnx-fuzimiao.jpg"
+      }
+    },
+    {
+      "id": "image-015",
+      "title": "东南大学",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 4620,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hnx-dongnan.jpg"
+      }
+    },
+    {
+      "id": "image-016",
+      "title": "南京博物院",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 5040,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hnx-nanjingbowuguan.jpg"
+      }
+    },
+    {
+      "id": "image-017",
+      "title": "三国城",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 5460,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hnx-sanguocheng.jpg"
+      }
+    },
+    {
+      "id": "image-018",
+      "title": "惠山泥人",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 5880,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hnx-huishanniren.jpg"
+      }
+    },
+    {
+      "id": "image-019",
+      "title": "上海迪士尼",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 6300,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hnx-disneyland.jpg"
+      }
+    },
+    {
+      "id": "image-020",
+      "title": "江南造船厂",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 6720,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hnx-jiangnan.jpg"
+      }
+    },
+    {
+      "id": "image-021",
+      "title": "黄埔军校旧址",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 7140,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-huangpu.jpg"
+      }
+    },
+    {
+      "id": "image-022",
+      "title": "中山大学",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 7560,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-zhongshan-dx.jpg"
+      }
+    },
+    {
+      "id": "image-023",
+      "title": "深圳科技馆",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 7980,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-shenzhenkeji.jpg"
+      }
+    },
+    {
+      "id": "image-024",
+      "title": "香港大学",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 8400,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-xianggangdx.jpg"
+      }
+    },
+    {
+      "id": "image-025",
+      "title": "香港海洋公园",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 8820,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-haiyanggongyuan.jpg"
+      }
+    },
+    {
+      "id": "image-026",
+      "title": "港珠澳大桥",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 9240,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-gangzhuhao.jpg"
+      }
+    },
+    {
+      "id": "image-027",
+      "title": "澳门大学",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 9660,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-aomen-dx.jpg"
+      }
+    },
+    {
+      "id": "image-028",
+      "title": "大三巴牌坊",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 10080,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-dasangba.jpg"
+      }
+    },
+    {
+      "id": "image-029",
+      "title": "黔行阅途研学二维码",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 10500,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/黔行阅途研学二维码.png"
+      }
+    },
+    {
+      "id": "image-030",
+      "title": "天安门广场",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 10920,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-tiananmen.jpg"
+      }
+    },
+    {
+      "id": "image-031",
+      "title": "前门大街",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 11340,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-qianmen.jpg"
+      }
+    },
+    {
+      "id": "image-032",
+      "title": "皮影戏",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 11760,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-piyingxi.jpg"
+      }
+    },
+    {
+      "id": "image-046",
+      "title": "清华大学",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 12180,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-qinghua-xiaomen.jpg"
+      }
+    },
+    {
+      "id": "image-048",
+      "title": "北京大学",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 12600,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-beida-xiaomen.jpg"
+      }
+    },
+    {
+      "id": "image-033",
+      "title": "军事博物馆",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 13020,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-junbo.jpg"
+      }
+    },
+    {
+      "id": "image-034",
+      "title": "全聚德烤鸭",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 13440,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/beijing-quanjude.jpg"
+      }
+    },
+    {
+      "id": "image-035",
+      "title": "中华门城堡",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 13860,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hnx-zhonghuamen.jpg"
+      }
+    },
+    {
+      "id": "image-036",
+      "title": "清名桥古运河",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 14280,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hnx-guyunhe.jpg"
+      }
+    },
+    {
+      "id": "image-037",
+      "title": "外滩夜景",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 14700,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hnx-waitan.jpg"
+      }
+    },
+    {
+      "id": "image-038",
+      "title": "上海交通大学",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 15120,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hnx-shanghaijiaoda.jpg"
+      }
+    },
+    {
+      "id": "image-039",
+      "title": "太平山顶缆车",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 15540,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-taipingshan.jpg"
+      }
+    },
+    {
+      "id": "image-040",
+      "title": "百年叮叮车",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 15960,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-dingdingche.jpg"
+      }
+    },
+    {
+      "id": "image-041",
+      "title": "金紫荆广场",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 16380,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-jinzicong.jpg"
+      }
+    },
+    {
+      "id": "image-042",
+      "title": "维多利亚港夜景",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 16800,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-weiduoliya.jpg"
+      }
+    },
+    {
+      "id": "image-043",
+      "title": "澳门博物馆·大炮台",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 17220,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-aomen-bowuguan.jpg"
+      }
+    },
+    {
+      "id": "image-044",
+      "title": "广东省博物馆",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 17640,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-shengdong-bowuguan.jpg"
+      }
+    },
+    {
+      "id": "image-045",
+      "title": "广州塔",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 18060,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-guangzhouta.jpg"
+      }
+    },
+    {
+      "id": "image-047",
+      "title": "香港迪士尼乐园",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 18480,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/yga-disneyland.jpg"
+      }
+    },
+    {
+      "id": "image-049",
+      "title": "北京线路横幅",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 18900,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hero-beijing.jpg"
+      }
+    },
+    {
+      "id": "image-050",
+      "title": "沪宁锡线路横幅",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 19320,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hero-huningxi.jpg"
+      }
+    },
+    {
+      "id": "image-051",
+      "title": "粤港澳线路横幅",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 19740,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hero-yuegangao.jpg"
+      }
+    },
+    {
+      "id": "image-052",
+      "title": "北京线路卡片图",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 20160,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/card-beijing.jpg"
+      }
+    },
+    {
+      "id": "image-053",
+      "title": "沪宁锡线路卡片图",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 20580,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/card-huningxi.jpg"
+      }
+    },
+    {
+      "id": "image-054",
+      "title": "粤港澳线路卡片图",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751414400000,
+      "canvasData": {
+        "x": 21000,
+        "y": 1515
+      },
+      "devMetadata": {
+        "imageSrc": "assets/card-yuegangao.jpg"
+      }
+    }
+  ],
+  "config": {
+    "autoLayout": false,
+    "deviceType": "mobile",
+    "projectName": "黔行阅途研学夏令营 - 苹果风格",
+    "designLibrary": {
+      "name": "苹果",
+      "id": "dl_builtin_apple",
+      "version": "",
+      "scope": "built-in-global",
+      "path": "/Users/maco/.trae-cn/design_libraries/dl_builtin_apple",
+      "versionSource": "metadata.json"
+    }
+  }
+}

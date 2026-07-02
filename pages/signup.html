@@ -274,6 +274,9 @@
 
         let isAgreed = false;
 
+        // Tencent Cloud SCF API配置 - 部署后改成你的API网关地址
+        var API_BASE = 'https://1411320533-k8vz2c5a8r.ap-guangzhou.tencentscf.com';  // SCF函数URL（API后端）
+
         // City selector onChange
         citySelect.addEventListener('change', function() {
             const city = this.value;
@@ -392,7 +395,7 @@
             this.textContent = '提交中...';
             this.disabled = true;
 
-            fetch('/api/signup', {
+            fetch((API_BASE || '') + '/api/signup', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)

@@ -1,0 +1,45 @@
+{
+  "project": {
+    "name": "黔行阅途研学夏令营 - 苹果风格",
+    "path": "/Users/maco/Downloads/新华书店/08-黔行阅途研学/qianxing-yuetu-draft",
+    "operation": "redesign-ui",
+    "deviceType": "mobile",
+    "language": "zh-CN"
+  },
+  "designSource": {
+    "operatingMode": "library-bound",
+    "libraryIdentity": {
+      "name": "苹果",
+      "id": "dl_builtin_apple",
+      "version": "",
+      "scope": "built-in-global",
+      "path": "/Users/maco/.trae-cn/design_libraries/dl_builtin_apple",
+      "versionSource": "metadata.json"
+    },
+    "libraryPath": "/Users/maco/.trae-cn/design_libraries/dl_builtin_apple",
+    "cssFilePath": "/Users/maco/.trae-cn/design_libraries/dl_builtin_apple/css/colors_and_type.css",
+    "designDecisionSummary": "Apple design system: SF-style DM Sans font, #007aff brand blue, #f2f2f7 warm gray bg, 19.2px rounded radius, clean minimal surfaces, subtle layered shadows. Adapted for Chinese youth summer camp booking."
+  },
+  "pages": [
+    {
+      "nodeId": "page-home", "slug": "home", "title": "首页", "htmlSrc": "pages/home.html",
+      "pageType": "showcase", "imagePlan": ["hero-home.jpg"]
+    },
+    {
+      "nodeId": "page-beijing", "slug": "beijing", "title": "北京6天文化深度研学营", "htmlSrc": "pages/beijing.html",
+      "pageType": "information-dense", "imagePlan": ["hero-beijing.jpg"]
+    },
+    {
+      "nodeId": "page-huningxi", "slug": "huningxi", "title": "沪宁锡7天人文科技迪士尼", "htmlSrc": "pages/huningxi.html",
+      "pageType": "information-dense", "imagePlan": ["hero-huningxi.jpg"]
+    },
+    {
+      "nodeId": "page-yuegangao", "slug": "yuegangao", "title": "粤港澳6天名校科技探索营", "htmlSrc": "pages/yuegangao.html",
+      "pageType": "information-dense", "imagePlan": ["hero-yuegangao.jpg"]
+    },
+    {
+      "nodeId": "page-signup", "slug": "signup", "title": "在线报名", "htmlSrc": "pages/signup.html",
+      "pageType": "task-driven", "imagePlan": []
+    }
+  ]
+}
